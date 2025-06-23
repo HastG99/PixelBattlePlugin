@@ -1,0 +1,8 @@
+delay: 10
+
+delay-message: "&cПодождите %d секунд!"
+placed: "&aВы поставили блок"
+entry-format: "&f%s &7- &e%d"
+not-a-number: "&cВведёный вами аргумент не является числом"
+setdelay-error: "&cОшибка! Используйте /setdelay (задержка)"
+setdelay-success: "&aЗадержка успешно установлена"

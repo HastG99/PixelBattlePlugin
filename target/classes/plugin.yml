@@ -1,0 +1,17 @@
+name: PixelBattle
+version: '1.0-SNAPSHOT'
+main: ru.hastg9.pixelbattle.PixelBattle
+api-version: '1.16'
+author: HastG99
+softdepend:
+  - PlaceholderAPI
+  - CoreProtect
+commands:
+  setdelay:
+    permission: pb.setdelay
+    usage: /setdelay (cooldown)
+
+permissions:
+  pb.setdelay:
+    default: op
+    description: Needs to use /setdelay
