@@ -7,4 +7,15 @@
 
 |    COMMAND    |       DESCRIPTION        |  PERMISSION  |
 |:-------------:|:------------------------:|:------------:|
-|    `/setdelay`     | Change the delay to staging block (default 10 sec.) |  `pb.setdelay`   |
+|    `/setdelay`     | Change the delay to placing block (default 10 sec.) |  `pb.setdelay`   |
+
+
+
+# Placeholders
+|    COMMAND    |       DESCRIPTION        |
+|:-------------:|:------------------------:|
+|    `%pixelbattle_delay%`     | Returns current delay. |
+| `%pixelbattle_total%` |      Returns total blocks placed on pixelbattle.      |
+|    `%pixelbattle_totalk%`     |        Returns total blocks placed on pixelbattle. (In thousands)        |
+|      `%pixelbattle_totalk%`         |   Returns the number of blocks placed by the player.  |
+|      `%pixelbattle_{number}%`         |   Returns N position from the top of players by blocks placed.  |
