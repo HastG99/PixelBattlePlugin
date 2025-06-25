@@ -19,3 +19,8 @@
 |    `%pixelbattle_totalk%`     |        Returns total blocks placed on pixelbattle. (In thousands)        |
 |      `%pixelbattle_totalk%`         |   Returns the number of blocks placed by the player.  |
 |      `%pixelbattle_{number}%`         |   Returns N position from the top of players by blocks placed.  |
+
+
+# Dependencies
+- [PlaceholderAPI](https://github.com/PlaceholderAPI/PlaceholderAPI)
+- [CoreProtect](https://github.com/PlayPro/CoreProtect)
