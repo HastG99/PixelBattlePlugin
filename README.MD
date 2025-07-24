@@ -1,26 +1,62 @@
-## PixelBattle plugin for Spigot 1.16.5+
+# 🎨 PixelBattle Plugin for Spigot 1.16.5+
 
-**PixelBattle** is a universal plugin to create your own pixel battle on your minecraft server. It supports PlaceholderAPI. And it works with CoreProtect plugin.
+> [🇷🇺 Читать на русском](./README.ru.md)
 
+PixelBattle is a Minecraft plugin that allows players to engage in pixel art battles using colored wool blocks. Blocks are placed with a customizable delay, and a leaderboard tracks activity. Fully supports PlaceholderAPI, with optional CoreProtect integration for rollback logging.
 
-# Commands & Permissions
+---
 
-|    COMMAND    |       DESCRIPTION        |  PERMISSION  |
-|:-------------:|:------------------------:|:------------:|
-|    `/setdelay`     | Change the delay to placing block (default 10 sec.) |  `pb.setdelay`   |
+## 🚀 Features
 
+- ⏱ Customizable delay between block placements
+- 🏆 Leaderboard & statistics tracking
+- 🧩 Full PlaceholderAPI support
+- 🛡 Optional CoreProtect logging
+- 🧱 Automatic inventory setup with colored wool
+- 💾 Data persistence via YAML
 
+---
 
-# Placeholders
-|    COMMAND    |       DESCRIPTION        |
-|:-------------:|:------------------------:|
-|    `%pixelbattle_delay%`     | Returns current delay. |
-| `%pixelbattle_total%` |      Returns total blocks placed on pixelbattle.      |
-|    `%pixelbattle_totalk%`     |        Returns total blocks placed on pixelbattle. (In thousands)        |
-|      `%pixelbattle_count%`         |   Returns the number of blocks placed by the player.  |
-|      `%pixelbattle_{number}%`         |   Returns N position from the top of players by blocks placed.  |
+## 📥 Installation
 
+1. Download the `.jar` from [releases](https://github.com/YOUR-USERNAME/PixelBattlePlugin/releases)
+2. Drop it into your server’s `/plugins` folder
+3. Install [PlaceholderAPI](https://github.com/PlaceholderAPI/PlaceholderAPI)
+4. (Optional) Install [CoreProtect](https://github.com/PlayPro/CoreProtect)
+5. Restart your server
 
-# Dependencies
-- [PlaceholderAPI](https://github.com/PlaceholderAPI/PlaceholderAPI)
-- [CoreProtect](https://github.com/PlayPro/CoreProtect)
+---
+
+## 📜 Commands & Permissions
+
+| Command         | Description                                | Permission     |
+|-----------------|--------------------------------------------|----------------|
+| `/setdelay <n>` | Set delay (seconds) between block placing  | `pb.setdelay`  |
+
+---
+
+## 🧩 Placeholders
+
+Use these with PlaceholderAPI-compatible plugins:
+
+| Placeholder               | Description                            |
+|---------------------------|----------------------------------------|
+| `%pixelbattle_delay%`     | Current placement delay                |
+| `%pixelbattle_total%`     | Total blocks placed (global)           |
+| `%pixelbattle_totalk%`    | Total blocks (in thousands)            |
+| `%pixelbattle_count%`     | Player's block count                   |
+| `%pixelbattle_{number}%`  | Top N player by block count            |
+
+---
+
+## 🧱 Config Example
+
+```yaml
+delay: 10
+delay-message: "&cWait %d seconds!"
+placed: "&aBlock placed!"
+entry-format: "&f%s &7- &e%d"
+not-a-number: "&cThat is not a number"
+setdelay-error: "&cUsage: /setdelay <delay>"
+setdelay-success: "&aDelay set successfully"
+```
