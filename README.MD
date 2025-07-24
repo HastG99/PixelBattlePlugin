@@ -2,6 +2,8 @@
 
 > [🇷🇺 Читать на русском](./README_RU.MD)
 
+![PixelBattle Plugin Banner](./banner.png)
+
 PixelBattle is a Minecraft plugin that allows players to engage in pixel art battles using colored wool blocks. Blocks are placed with a customizable delay, and a leaderboard tracks activity. Fully supports PlaceholderAPI, with optional CoreProtect integration for rollback logging.
 
 ---
