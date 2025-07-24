@@ -1,4 +1,3 @@
-```markdown
 # 🎨 PixelBattle — Плагин для Spigot 1.16.5+
 
 > [🇬🇧 Read in English](./README.md)
